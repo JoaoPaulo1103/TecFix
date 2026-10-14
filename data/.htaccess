@@ -1,0 +1,9 @@
+Options -Indexes
+<FilesMatch "\.(php|phtml|php[0-9]*)$">
+  Require all denied
+</FilesMatch>
+
+# Credenciais locais nunca devem ser acessíveis pela web
+<Files "config.local.php">
+    Require all denied
+</Files>
